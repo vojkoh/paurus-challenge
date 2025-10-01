@@ -3,14 +3,27 @@
     {
       "id": "soi4",
       "name": "Vojko Hysz",
-      "year": 2,
-      "subjects": ["1", "3"]
+      "year": 2
     },
     {
       "id": "xi3k",
       "name": "Another Student",
-      "year": 1,
-      "subjects": ["2"]
+      "year": 1
+    },
+    {
+      "id": "ab12",
+      "name": "Third Student",
+      "year": 3
+    },
+    {
+      "id": "cd34",
+      "name": "Fourth Student",
+      "year": 2
+    },
+    {
+      "id": "ef56",
+      "name": "Fifth Student",
+      "year": 1
     }
   ],
   "subjects": [
@@ -31,6 +44,88 @@
       "name": "programming",
       "semester": "winter",
       "ects": 6
+    },
+    {
+      "id": "4",
+      "name": "history",
+      "semester": "summer",
+      "ects": 4
+    }, 
+    {
+      "id": "5",
+      "name": "geography",
+      "semester": "winter",
+      "ects": 2
+    },
+    {
+      "id": "6",
+      "name": "biology",
+      "semester": "summer",
+      "ects": 5
+    },
+    {
+      "id": "7",
+      "name": "chemistry",
+      "semester": "winter",
+      "ects": 4
+    }
+  ],
+  "enrollments": [
+    {
+      "studentId": "soi4",
+      "subjectId": "1"
+    },
+    {
+      "studentId": "soi4",
+      "subjectId": "3"
+    },
+    {
+      "studentId": "xi3k",
+      "subjectId": "2"
+    },
+    {
+      "studentId": "ab12",
+      "subjectId": "4"
+    },
+    {
+      "studentId": "ab12",
+      "subjectId": "5"
+    },
+    {
+      "studentId": "ab12",
+      "subjectId": "6"
+    },
+    {
+      "studentId": "cd34",
+      "subjectId": "1"
+    },
+    {
+      "studentId": "cd34",
+      "subjectId": "7"
+    },
+    {
+      "studentId": "ef56",
+      "subjectId": "2"
+    },
+    {
+      "studentId": "ef56",
+      "subjectId": "3"
+    },
+    {
+      "studentId": "ef56",
+      "subjectId": "4"
+    },
+    {
+      "studentId": "ef56",
+      "subjectId": "5"
+    },
+    {
+      "studentId": "ef56",
+      "subjectId": "6"
+    },
+    {
+      "studentId": "ef56",
+      "subjectId": "7"
     }
   ],
   "profile": {

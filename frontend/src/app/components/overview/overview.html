@@ -15,12 +15,6 @@
                         <p-sortIcon field="year" />
                     </div>
                 </th>
-                <th pSortableColumn="num_of_subjects" style="width:20%">
-                    <div class="flex items-center gap-2">
-                        Number of Subjects
-                        <p-sortIcon field="num_of_subjects" />
-                    </div>
-                </th>
             </tr>
         </ng-template>
         <ng-template #body let-rowData>
@@ -30,9 +24,6 @@
                 </td>
                 <td>
                     {{ rowData.year }}
-                </td>
-                <td>
-                    {{ rowData.subjects.length }}
                 </td>
             </tr>
         </ng-template>
