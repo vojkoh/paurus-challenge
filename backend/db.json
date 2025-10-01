@@ -16,15 +16,21 @@
   "subjects": [
     {
       "id": "1",
-      "name": "math"
+      "name": "math",
+      "semester": "winter",
+      "ects": 6
     },
     {
       "id": "2",
-      "name": "english"
+      "name": "english",
+      "semester": "summer",
+      "ects": 3
     },
     {
       "id": "3",
-      "name": "programming"
+      "name": "programming",
+      "semester": "winter",
+      "ects": 6
     }
   ],
   "profile": {

@@ -1,6 +1,6 @@
 import { Routes } from '@angular/router';
 import { Overview } from './components/overview/overview';
-import { User } from './components/user/user';
+import { StudentView } from './components/student/student';
 
 export const routes: Routes = [
     { path: '', redirectTo: 'overview', pathMatch: 'full' },
@@ -9,8 +9,8 @@ export const routes: Routes = [
     component: Overview,
   },
   {
-    path: 'user/:id',
-    component: User,
+    path: 'student/:id',
+    component: StudentView,
   },
   {
     path: '**',

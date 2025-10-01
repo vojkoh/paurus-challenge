@@ -1,0 +1,35 @@
+/* :host ::ng-deep .p-datatable-thead > tr > th {
+  background-color: var(--p-primary-950);  
+  color: white;
+  font-weight: bold;
+}
+
+:host ::ng-deep .p-datatable-sort-icon {
+  color: white;
+}
+
+:host ::ng-deep .p-datatable-thead > tr > th:hover {
+  background-color: var(--p-primary-800);  
+  color: white;
+  font-weight: bold;
+}
+
+:host ::ng-deep .p-datatable-thead > tr:hover .p-datatable-sort-icon { 
+  color: white;
+}
+
+
+:host ::ng-deep .p-datatable-table {
+  border-collapse: separate;
+  border-spacing: 0 1em;
+}
+
+
+:host ::ng-deep .p-datatable-tbody > tr > td {
+  border: none;
+}
+
+:host ::ng-deep .p-datatable-tbody > tr {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 4px;
+} */

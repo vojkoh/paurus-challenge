@@ -1,4 +1,51 @@
-<app-header [name]="studentId"></app-header>
+<app-header [name]="student.name" [year]="student.year"></app-header>
 <app-content-wrapper>
-    <p>student works!</p>
+
+    <p-table sortMode="multiple" stripedRows [columns]="cols" [value]="subjects" [tableStyle]="{ 'min-width': '60rem'}">
+        <ng-template #header>
+            <tr>
+                <th pSortableColumn="id" style="width:20%">
+                    <div class="flex items-center gap-2">
+                        ID
+                        <p-sortIcon field="id" />
+                    </div>
+                </th>
+                <th pSortableColumn="name" style="width:20%">
+                    <div class="flex items-center gap-2">
+                        Name
+                        <p-sortIcon field="name" />
+                    </div>
+                </th>
+                <th pSortableColumn="semester" style="width:20%">
+                    <div class="flex items-center gap-2">
+                        Semester
+                        <p-sortIcon field="semester" />
+                    </div>
+                </th>
+                <th pSortableColumn="ects" style="width:20%">
+                    <div class="flex items-center gap-2">
+                        ECTS
+                        <p-sortIcon field="ects" />
+                    </div>
+                </th>
+            </tr>
+        </ng-template>
+        <ng-template #body let-rowData>
+            <tr>
+                <td>
+                    {{ rowData.id }}
+                </td>
+                <td>
+                    {{ rowData.name }}
+                </td>
+                <td>
+                    {{ rowData.semester }}
+                </td>
+                <td>
+                    {{ rowData.ects }}
+                </td>
+            </tr>
+        </ng-template>
+    </p-table>
+
 </app-content-wrapper>
