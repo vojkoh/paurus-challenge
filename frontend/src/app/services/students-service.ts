@@ -4,6 +4,7 @@ import { HttpClient, HttpErrorResponse } from '@angular/common/http';
 import { throwError } from 'rxjs/internal/observable/throwError';
 import { catchError, Observable } from 'rxjs';
 import { CreateStudentDto } from '../dtos/create-student-dto';
+import { PaginateResponse } from '../dtos/paginate-response';
 
 @Injectable({
   providedIn: 'root'
@@ -13,9 +14,9 @@ export class StudentsService {
   constructor(protected readonly http: HttpClient) {}
 
   protected apiUrl = 'http://localhost:3000';
-  
-  public getStudents(): Observable<Student[]> {
-    return this.http.get<Student[]>(`${this.apiUrl}/students`).pipe(
+
+  public getStudents(page: number, perPage: number): Observable<PaginateResponse> {
+    return this.http.get<PaginateResponse>(`${this.apiUrl}/students?_page=${page}&_per_page=${perPage}`).pipe(
       catchError(this.handleError)
     );
   };

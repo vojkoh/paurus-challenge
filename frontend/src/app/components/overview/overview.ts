@@ -14,6 +14,8 @@ import { InputNumberModule } from 'primeng/inputnumber';
 import { MultiSelectModule } from 'primeng/multiselect';
 import { SubjectsService } from '../../services/subjects-service';
 import { EnrollmentsService } from '../../services/enrollments-service';
+import { PaginatorModule, PaginatorState } from 'primeng/paginator';
+
 
 interface SubjectOption {
   label: string;
@@ -33,7 +35,8 @@ interface SubjectOption {
     FormsModule,
     FloatLabel,
     InputNumberModule,
-    MultiSelectModule
+    MultiSelectModule,
+    PaginatorModule
   ],
   templateUrl: './overview.html',
   styleUrl: './overview.css'
@@ -53,16 +56,31 @@ export class Overview implements OnInit {
   protected studentYear: number | null = null;
   protected studentSubjectIds: string[] = [];
 
+  // for pagination
+  protected first: number = 0;
+  protected page: number = 0;
+  protected rows: number = 20;
+  protected totalRecords: number = 120; // TO-DO: Get from backend
+
+
   ngOnInit(): void {
-    this.studentsService.getStudents().subscribe({
-      next: (students) => {
-        this.students = students;
+    this.getStudents();
+    this.getAllSubjects();
+  }
+
+  protected getStudents() {
+    this.studentsService.getStudents(this.page + 1, this.rows).subscribe({
+      next: (res) => {
+        this.students = res.data;
+        this.totalRecords = res.items;
       },
       error: (error) => {
         console.error('Error fetching students:', error);
       }
     });
+  }
 
+  protected getAllSubjects() {
     this.subjectsService.getSubjects().subscribe({
       next: (subjects) => {
         this.subjects = subjects.map(subject => ({ 
@@ -75,6 +93,7 @@ export class Overview implements OnInit {
       }
     });
   }
+
 
   protected async saveStudent() {
     // TO-DO: Save student logic
@@ -112,6 +131,13 @@ export class Overview implements OnInit {
         console.error('Error saving student:', error);
       }
     });
+  }
+
+  onPageChange(event: PaginatorState) {
+    this.first = event.first ?? 0;
+    this.page = event.page ?? 1;
+    this.rows = event.rows ?? 20;
+    this.getStudents();
   }
 
   showDialog() {

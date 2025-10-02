@@ -33,3 +33,21 @@
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     border-radius: 4px;
 } */
+
+
+
+
+
+
+/* :host ::ng-deep .p-paginator {
+  justify-content: space-between;
+}
+
+:host ::ng-deep .p-paginator > button {
+  justify-self: flex-end;
+}
+
+:host ::ng-deep .p-paginator-current {
+  font-weight: bold;
+  justify-self: flex-start;
+} */
