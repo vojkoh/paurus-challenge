@@ -4,6 +4,8 @@ import { Observable } from 'rxjs/internal/Observable';
 import { Enrollment } from '../classes/enrollment';
 import { catchError } from 'rxjs/internal/operators/catchError';
 import { throwError } from 'rxjs/internal/observable/throwError';
+import { CreateEnrollmentDto } from '../dtos/create-enrollment-dto';
+import { NewEnrollmentDto } from '../dtos/new-enrollment-dto';
 
 @Injectable({
   providedIn: 'root'
@@ -20,6 +22,18 @@ export class EnrollmentsService {
       catchError(this.handleError)
     );
   };
+
+  public addEnrollment(enrollment: CreateEnrollmentDto): Observable<NewEnrollmentDto> {
+    return this.http.post<NewEnrollmentDto>(`${this.apiUrl}/enrollments`, enrollment).pipe(
+      catchError(this.handleError)
+    );
+  }
+
+  public deleteEnrollment(enrollmentId: string): Observable<void> {
+    return this.http.delete<void>(`${this.apiUrl}/enrollments/${enrollmentId}`).pipe(
+      catchError(this.handleError)
+    );
+  }
 
   protected handleError(error: HttpErrorResponse) {
     console.error(`${error.status}, ${error.message}`);

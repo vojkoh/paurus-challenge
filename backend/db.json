@@ -2,28 +2,8 @@
   "students": [
     {
       "id": "soi4",
-      "name": "Vojko Hysz",
+      "name": "Vojko",
       "year": 2
-    },
-    {
-      "id": "xi3k",
-      "name": "Another Student",
-      "year": 1
-    },
-    {
-      "id": "ab12",
-      "name": "Third Student",
-      "year": 3
-    },
-    {
-      "id": "cd34",
-      "name": "Fourth Student",
-      "year": 2
-    },
-    {
-      "id": "ef56",
-      "name": "Fifth Student",
-      "year": 1
     }
   ],
   "subjects": [
@@ -50,7 +30,7 @@
       "name": "history",
       "semester": "summer",
       "ects": 4
-    }, 
+    },
     {
       "id": "5",
       "name": "geography",
@@ -72,60 +52,19 @@
   ],
   "enrollments": [
     {
+      "id": "9a01",
+      "studentId": "soi4",
+      "subjectId": "2"
+    },
+    {
+      "id": "7252",
       "studentId": "soi4",
       "subjectId": "1"
     },
     {
+      "id": "43f1",
       "studentId": "soi4",
       "subjectId": "3"
-    },
-    {
-      "studentId": "xi3k",
-      "subjectId": "2"
-    },
-    {
-      "studentId": "ab12",
-      "subjectId": "4"
-    },
-    {
-      "studentId": "ab12",
-      "subjectId": "5"
-    },
-    {
-      "studentId": "ab12",
-      "subjectId": "6"
-    },
-    {
-      "studentId": "cd34",
-      "subjectId": "1"
-    },
-    {
-      "studentId": "cd34",
-      "subjectId": "7"
-    },
-    {
-      "studentId": "ef56",
-      "subjectId": "2"
-    },
-    {
-      "studentId": "ef56",
-      "subjectId": "3"
-    },
-    {
-      "studentId": "ef56",
-      "subjectId": "4"
-    },
-    {
-      "studentId": "ef56",
-      "subjectId": "5"
-    },
-    {
-      "studentId": "ef56",
-      "subjectId": "6"
-    },
-    {
-      "studentId": "ef56",
-      "subjectId": "7"
     }
   ],
   "profile": {

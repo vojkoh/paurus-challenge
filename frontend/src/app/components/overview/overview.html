@@ -28,4 +28,55 @@
             </tr>
         </ng-template>
     </p-table>
+
+    <p-button (click)="showDialog()" label="Add Student" />
+    <p-dialog header="Add a student" [modal]="true" [(visible)]="visible" [style]="{ width: '25rem' }">
+        <span class="p-text-secondary block mb-8">Provide information for creating a new student.</span>
+        <div class="flex items-center flex-col gap-4 mb-4">
+            <p-floatlabel variant="on" class="w-full">
+                <label for="name" class="font-semibold">Name and Surname</label>
+                <input pInputText 
+                    id="name" 
+                    class="flex-auto w-full" 
+                    autocomplete="off"
+                    [(ngModel)]="studentName"
+                    aria-describedby="username-help"
+                />
+            </p-floatlabel>
+            <!-- <small id="username-help" class="text-red-600">Enter your username to reset your password.</small> -->
+        </div>
+        <div class="flex items-center gap-4 mb-8">
+            <p-floatlabel variant="on" class="w-full">
+                <label for="year" class="font-semibold z-10">Year</label>
+                <p-inputnumber
+                    inputId="year" 
+                    class="flex-auto w-full" 
+                    autocomplete="off"
+                    [(ngModel)]="studentYear"
+                />
+            </p-floatlabel>
+        </div>
+
+        <div class="card flex justify-center mb-4">
+            <p-floatlabel variant="on" class="w-full">
+                <label for="subjects" class="font-semibold z-10">Subjects</label>
+                <p-multiselect 
+                    [options]="subjects" 
+                    [(ngModel)]="studentSubjectIds" 
+                    optionLabel="label" optionValue="value" 
+                    [maxSelectedLabels]="3" 
+                    display="chip"
+                    appendTo="body"
+                    class="w-full" 
+                />
+            </p-floatlabel>
+
+        </div>
+
+        <div class="flex justify-end gap-2">
+            <p-button label="Cancel" severity="secondary" (click)="hideDialog()" />
+            <p-button label="Save" (click)="saveStudent()" />
+        </div>
+    </p-dialog>
+
 </app-content-wrapper>

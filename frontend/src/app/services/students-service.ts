@@ -3,6 +3,7 @@ import { Student } from '../classes/student';
 import { HttpClient, HttpErrorResponse } from '@angular/common/http';
 import { throwError } from 'rxjs/internal/observable/throwError';
 import { catchError, Observable } from 'rxjs';
+import { CreateStudentDto } from '../dtos/create-student-dto';
 
 @Injectable({
   providedIn: 'root'
@@ -21,6 +22,12 @@ export class StudentsService {
 
   public getStudent(studentId: string): Observable<Student> {
     return this.http.get<Student>(`${this.apiUrl}/students/${studentId}`).pipe(
+      catchError(this.handleError)
+    );
+  };
+
+  public addStudent(student: CreateStudentDto): Observable<Student> {
+    return this.http.post<Student>(`${this.apiUrl}/students`, student).pipe(
       catchError(this.handleError)
     );
   };

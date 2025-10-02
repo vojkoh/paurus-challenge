@@ -1,6 +1,8 @@
 import { ApplicationConfig, provideBrowserGlobalErrorListeners, provideZoneChangeDetection } from '@angular/core';
 import { provideRouter } from '@angular/router';
-import { providePrimeNG } from 'primeng/config';
+import { providePrimeNG } from 'primeng/config'
+import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
+;
 
 import MyPreset from './primengPreset';
 
@@ -14,6 +16,7 @@ export const appConfig: ApplicationConfig = {
     provideZoneChangeDetection({ eventCoalescing: true }),
     provideRouter(routes),
     provideHttpClient(),
+    provideAnimationsAsync(),
     providePrimeNG({ 
       theme: {
         preset: MyPreset,
