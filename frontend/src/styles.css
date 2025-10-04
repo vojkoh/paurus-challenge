@@ -1,6 +1,7 @@
 /* You can add global styles to this file, and also import other style files */
 @import "tailwindcss";
 @plugin "tailwindcss-primeui";
+@import "primeicons/primeicons.css";
 
 :root {
   --header-height: 6rem;
@@ -46,11 +47,11 @@
   }
 
   .p-datatable-thead > tr > th:first-child {
-    border-radius: 3px 0px 0px 3px;
+    border-radius: 4px 0px 0px 4px;
   }
 
   .p-datatable-thead > tr > th:last-child {
-    border-radius: 0px 3px 3px 0px;
+    border-radius: 0px 4px 4px 0px;
   }
 
   tr {
@@ -65,20 +66,24 @@
   }
 
   .p-datatable-tbody > tr > td:first-child {
-    border-radius: 3px 0px 0px 3px;
+    border-radius: 4px 0px 0px 4px;
   }
 
   .p-datatable-tbody > tr > td:last-child {
-    border-radius: 0px 3px 3px 0px;;
+    border-radius: 0px 4px 4px 0px;;
+  }
+
+  .p-datatable-tbody > tr:nth-child(even) > td {
+    background-color: var(--p-surface-100);
   }
 
   .p-datatable-tbody > tr:nth-child(odd) > td {
-    background-color: var(--p-surface-100);
+    background-color: #ffffff;
   }
 
   .p-paginator {
     display: grid;
-    grid-template-columns: 1fr 3em 3em 5em 3em 3em 6em;
+    grid-template-columns: 1fr 3em 3em auto 3em 3em 6em;
     justify-content: space-between;
   }
 

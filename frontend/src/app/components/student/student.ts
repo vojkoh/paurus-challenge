@@ -52,12 +52,14 @@ export class StudentView implements OnInit {
     private readonly enrollmentsService: EnrollmentsService
   ) {}
 
-  protected visible: boolean = false;
+  protected dialogVisible: boolean = false;
   private route: ActivatedRoute = inject(ActivatedRoute);
   protected subjects: SubjectOption[] = [];
 
   protected studentId!: string;
-  protected student: Student = { id: '', name: '', year: 0 };
+  protected student: Student = { id: '', name: '', surname: '', year: 0 };
+
+  // For editing enrollments
   protected studentEnrollments: Enrollment[] = [];
   protected studentSubjects: Subject[] = [];
 
@@ -70,7 +72,6 @@ export class StudentView implements OnInit {
     { field: 'semester', header: 'Semester' },
     { field: 'ects', header: 'ECTS' }
   ];
-  // TO-DO: Fetch column names
 
   ngOnInit() {
     this.studentId = this.route.snapshot.paramMap.get('id') || '';
@@ -119,6 +120,7 @@ export class StudentView implements OnInit {
 
   protected async editStudent() {
 
+    // Observables for adding/removing enrollments
     const requests: Observable<NewEnrollmentDto | void>[] = [];
 
     this.subjects.map(subject => {
@@ -157,10 +159,10 @@ export class StudentView implements OnInit {
   }
 
   showDialog() {
-    this.visible = true;
+    this.dialogVisible = true;
   }
 
   hideDialog() {
-    this.visible = false;
+    this.dialogVisible = false;
   }
 }

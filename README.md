@@ -1,3 +1,5 @@
 # paurus-challenge
 
-Admission challenge for Paurus company.
+Interview challenge for Paurus company.
+
+# Deployment

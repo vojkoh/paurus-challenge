@@ -1,4 +1,4 @@
-<app-header [name]="student.name" [year]="student.year"></app-header>
+<app-header [name]="student.name + ' ' + student.surname" [year]="student.year"></app-header>
 <app-content-wrapper>
 
     <p-table [hidden]="!studentSubjects.length" sortMode="multiple" stripedRows [columns]="cols" [value]="studentSubjects" [tableStyle]="{ 'min-width': '60rem'}">
@@ -51,22 +51,34 @@
         <p-button (click)="showDialog()" label="Edit Student" />
     </div>
 
-    <p-dialog header="Edit student" [modal]="true" [(visible)]="visible" [style]="{ width: '25rem' }">
+    <p-dialog header="Edit student" [modal]="true" [(visible)]="dialogVisible" [style]="{ width: '25rem' }">
         <span class="p-text-secondary block mb-8">Provide information for creating a new student.</span>
         <div class="flex items-center flex-col gap-4 mb-4">
             <p-floatlabel variant="on" class="w-full">
-                <label for="name" class="font-semibold">Name and Surname</label>
+                <label for="surname" class="font-semibold">Surname</label>
+                <input pInputText 
+                    id="surname" 
+                    class="flex-auto w-full" 
+                    autocomplete="off"
+                    [(ngModel)]="student.surname"
+                    disabled="true"
+                />
+            </p-floatlabel>
+        </div>
+        
+        <div class="flex items-center flex-col gap-4 mb-4">
+            <p-floatlabel variant="on" class="w-full">
+                <label for="name" class="font-semibold">Name</label>
                 <input pInputText 
                     id="name" 
                     class="flex-auto w-full" 
                     autocomplete="off"
                     [(ngModel)]="student.name"
-                    aria-describedby="username-help"
                     disabled="true"
                 />
             </p-floatlabel>
-            <!-- <small id="username-help" class="text-red-600">Enter your username to reset your password.</small> -->
         </div>
+
         <div class="flex items-center gap-4 mb-8">
             <p-floatlabel variant="on" class="w-full">
                 <label for="year" class="font-semibold z-10">Year</label>

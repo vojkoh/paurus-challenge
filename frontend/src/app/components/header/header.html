@@ -1,7 +1,6 @@
 <div class="bg-primary-700 flex items-center p-2 h-[var(--header-height)]">
-    <div class="ml-4 p-2 text-3xl text-white grid grid-cols-2 gap-4">
-        <!-- TO-DO: change this hardcoded value (white) -->
-        <div class="">
+    <div class="w-full ml-4 p-2 text-3xl text-white grid grid-cols-[auto_1fr_50px] gap-4">
+        <div>
             <h1>
                 {{ name }}  
             </h1>
@@ -11,5 +10,11 @@
                 {{ `${year}. letnik` || '' }}
             </small>
         </div>
+        <div class="flex justify-end">
+            <p-button routerLink="/overview">
+                <i class="pi pi-home"></i>
+            </p-button>
+        </div>
+        
     </div>
 </div>

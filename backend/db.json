@@ -1,149 +1,916 @@
 {
   "students": [
     {
-      "id": "soi4",
-      "name": "Vojko",
-      "year": 2
-    },
-    {
-      "id": "xk12",
-      "name": "Ana",
-      "year": 1
-    },
-    {
-      "id": "pl09",
-      "name": "Marko",
-      "year": 3
-    },
-    {
-      "id": "mn56",
-      "name": "Eva",
-      "year": 2
-    },
-    {
-      "id": "qr78",
-      "name": "Luka",
-      "year": 1
-    },
-    {
-      "id": "ty34",
-      "name": "Sara",
-      "year": 3
-    },
-    {
-      "id": "gh23",
-      "name": "Nina",
-      "year": 2
-    },
-    {
-      "id": "jk89",
-      "name": "Tim",
-      "year": 1
-    },
-    {
-      "id": "uv45",
-      "name": "Mia",
-      "year": 3
-    },
-    {
       "id": "wx67",
+      "surname": "Novak",
       "name": "Jan",
       "year": 2
     },
     {
       "id": "cd90",
+      "surname": "Kovač",
       "name": "Zala",
       "year": 1
     },
     {
       "id": "ef21",
+      "surname": "Kovač",
       "name": "Tina",
       "year": 3
     },
     {
       "id": "ab34",
+      "surname": "Novak",
       "name": "Jure",
       "year": 2
     },
     {
       "id": "lm78",
+      "surname": "Novak",
       "name": "Lina",
       "year": 1
     },
     {
       "id": "no56",
+      "surname": "Kovač",
       "name": "Vid",
       "year": 3
     },
     {
-      "id": "pq12",
-      "name": "Ema",
-      "year": 2
-    },
-    {
       "id": "rs89",
+      "surname": "Horvat",
       "name": "Žan",
       "year": 1
     },
     {
       "id": "fg45",
+      "surname": "Horvat",
       "name": "Taja",
       "year": 3
     },
     {
       "id": "hi23",
+      "surname": "Breznikar",
       "name": "Nika",
       "year": 2
     },
     {
       "id": "de67",
+      "surname": "Breznikar",
       "name": "Aljaž",
       "year": 1
     },
     {
       "id": "uv99",
+      "surname": "Breznikar",
       "name": "Sara",
       "year": 2
     },
     {
       "id": "gh88",
+      "surname": "Breznikar",
       "name": "Luka",
       "year": 3
     },
     {
       "id": "ij77",
+      "surname": "Kralj",
       "name": "Maja",
       "year": 1
     },
     {
-      "id": "kl66",
-      "name": "Žiga",
-      "year": 2
-    },
-    {
       "id": "mn55",
+      "surname": "Potočnik",
       "name": "Tina",
       "year": 3
     },
     {
       "id": "op44",
+      "surname": "Vidic",
       "name": "Jaka",
       "year": 1
     },
     {
       "id": "qr33",
+      "surname": "Kos",
       "name": "Lina",
       "year": 2
     },
     {
       "id": "st22",
+      "surname": "Mlakar",
       "name": "Jan",
       "year": 3
     },
     {
       "id": "wx11",
+      "surname": "Babič",
       "name": "Eva",
       "year": 1
+    },
+    {
+      "id": "yz00",
+      "surname": "Zorko",
+      "name": "Nina",
+      "year": 2
+    },
+    {
+      "id": "ab12",
+      "surname": "Hribar",
+      "name": "Miha",
+      "year": 3
+    },
+    {
+      "id": "cd34",
+      "surname": "Zupan",
+      "name": "Ana",
+      "year": 1
+    },
+    {
+      "id": "ef56",
+      "surname": "Petek",
+      "name": "Marko",
+      "year": 2
+    },
+    {
+      "id": "gh78",
+      "surname": "Kunstelj",
+      "name": "Klara",
+      "year": 3
+    },
+    {
+      "id": "ij90",
+      "surname": "Oblak",
+      "name": "Žan",
+      "year": 1
+    },
+    {
+      "id": "kl21",
+      "surname": "Turk",
+      "name": "Tina",
+      "year": 2
+    },
+    {
+      "id": "mn43",
+      "surname": "Bernik",
+      "name": "Luka",
+      "year": 3
+    },
+    {
+      "id": "op65",
+      "surname": "Škarja",
+      "name": "Maja",
+      "year": 1
+    },
+    {
+      "id": "qr87",
+      "surname": "Tratnik",
+      "name": "Žiga",
+      "year": 2
+    },
+    {
+      "id": "st09",
+      "surname": "Šuštar",
+      "name": "Sara",
+      "year": 3
+    },
+    {
+      "id": "uv32",
+      "surname": "Podgoršek",
+      "name": "Jure",
+      "year": 1
+    },
+    {
+      "id": "wx54",
+      "surname": "Vodopivec",
+      "name": "Lina",
+      "year": 2
+    },
+    {
+      "id": "yz76",
+      "surname": "Gašper",
+      "name": "Vid",
+      "year": 3
+    },
+    {
+      "id": "ab98",
+      "surname": "Krajnc",
+      "name": "Ema",
+      "year": 1
+    },
+    {
+      "id": "cd11",
+      "surname": "Černič",
+      "name": "Žan",
+      "year": 2
+    },
+    {
+      "id": "ef22",
+      "surname": "Maček",
+      "name": "Nika",
+      "year": 3
+    },
+    {
+      "id": "gh33",
+      "surname": "Rozman",
+      "name": "Aljaž",
+      "year": 1
+    },
+    {
+      "id": "ij44",
+      "surname": "Kotnik",
+      "name": "Sara",
+      "year": 2
+    },
+    {
+      "id": "kl55",
+      "surname": "Pregl",
+      "name": "Luka",
+      "year": 3
+    },
+    {
+      "id": "mn66",
+      "surname": "Čebašek",
+      "name": "Maja",
+      "year": 1
+    },
+    {
+      "id": "op77",
+      "surname": "Bogataj",
+      "name": "Žiga",
+      "year": 2
+    },
+    {
+      "id": "qr88",
+      "surname": "Jereb",
+      "name": "Jan",
+      "year": 3
+    },
+    {
+      "id": "st99",
+      "surname": "Urbančič",
+      "name": "Eva",
+      "year": 1
+    },
+    {
+      "id": "uv00",
+      "surname": "Črnčec",
+      "name": "Nina",
+      "year": 2
+    },
+    {
+      "id": "wx13",
+      "surname": "Leskovar",
+      "name": "Miha",
+      "year": 3
+    },
+    {
+      "id": "yz24",
+      "surname": "Pavlin",
+      "name": "Ana",
+      "year": 1
+    },
+    {
+      "id": "ab35",
+      "surname": "Šinkovec",
+      "name": "Marko",
+      "year": 2
+    },
+    {
+      "id": "cd46",
+      "surname": "Dolinar",
+      "name": "Klara",
+      "year": 3
+    },
+    {
+      "id": "ef57",
+      "surname": "Primožič",
+      "name": "Žan",
+      "year": 1
+    },
+    {
+      "id": "gh68",
+      "surname": "Kopitar",
+      "name": "Tina",
+      "year": 2
+    },
+    {
+      "id": "ij79",
+      "surname": "Mihelič",
+      "name": "Luka",
+      "year": 3
+    },
+    {
+      "id": "kl80",
+      "surname": "Žnidaršič",
+      "name": "Maja",
+      "year": 1
+    },
+    {
+      "id": "mn91",
+      "surname": "Možina",
+      "name": "Žiga",
+      "year": 2
+    },
+    {
+      "id": "op02",
+      "surname": "Furlan",
+      "name": "Sara",
+      "year": 3
+    },
+    {
+      "id": "qr14",
+      "surname": "Šraj",
+      "name": "Jure",
+      "year": 1
+    },
+    {
+      "id": "st25",
+      "surname": "Črepinšek",
+      "name": "Lina",
+      "year": 2
+    },
+    {
+      "id": "uv36",
+      "surname": "Marinček",
+      "name": "Vid",
+      "year": 3
+    },
+    {
+      "id": "wx47",
+      "surname": "Kotlar",
+      "name": "Ema",
+      "year": 1
+    },
+    {
+      "id": "yz58",
+      "surname": "Pirnat",
+      "name": "Žan",
+      "year": 2
+    },
+    {
+      "id": "ab69",
+      "surname": "Kastelic",
+      "name": "Nika",
+      "year": 3
+    },
+    {
+      "id": "cd70",
+      "surname": "Sitar",
+      "name": "Aljaž",
+      "year": 1
+    },
+    {
+      "id": "ef81",
+      "surname": "Zalokar",
+      "name": "Sara",
+      "year": 2
+    },
+    {
+      "id": "gh92",
+      "surname": "Prosen",
+      "name": "Luka",
+      "year": 3
+    },
+    {
+      "id": "ij03",
+      "surname": "Korošec",
+      "name": "Maja",
+      "year": 1
+    },
+    {
+      "id": "kl15",
+      "surname": "Benedik",
+      "name": "Žiga",
+      "year": 2
+    },
+    {
+      "id": "mn26",
+      "surname": "Pevec",
+      "name": "Jan",
+      "year": 3
+    },
+    {
+      "id": "op37",
+      "surname": "Fajfar",
+      "name": "Eva",
+      "year": 1
+    },
+    {
+      "id": "qr48",
+      "surname": "Dolenec",
+      "name": "Nina",
+      "year": 2
+    },
+    {
+      "id": "st59",
+      "surname": "Gradišek",
+      "name": "Miha",
+      "year": 3
+    },
+    {
+      "id": "uv60",
+      "surname": "Beštar",
+      "name": "Ana",
+      "year": 1
+    },
+    {
+      "id": "wx71",
+      "surname": "Štor",
+      "name": "Marko",
+      "year": 2
+    },
+    {
+      "id": "yz82",
+      "surname": "Rebec",
+      "name": "Klara",
+      "year": 3
+    },
+    {
+      "id": "ab93",
+      "surname": "Kogovšek",
+      "name": "Žan",
+      "year": 1
+    },
+    {
+      "id": "cd04",
+      "surname": "Žužek",
+      "name": "Tina",
+      "year": 2
+    },
+    {
+      "id": "ef16",
+      "surname": "Pšenica",
+      "name": "Luka",
+      "year": 3
+    },
+    {
+      "id": "gh27",
+      "surname": "Bizjak",
+      "name": "Maja",
+      "year": 1
+    },
+    {
+      "id": "ij38",
+      "surname": "Pečar",
+      "name": "Žiga",
+      "year": 2
+    },
+    {
+      "id": "kl49",
+      "surname": "Hauptman",
+      "name": "Sara",
+      "year": 3
+    },
+    {
+      "id": "mn50",
+      "surname": "Modic",
+      "name": "Jure",
+      "year": 1
+    },
+    {
+      "id": "op61",
+      "surname": "Lainšček",
+      "name": "Lina",
+      "year": 2
+    },
+    {
+      "id": "qr72",
+      "surname": "Zidar",
+      "name": "Vid",
+      "year": 3
+    },
+    {
+      "id": "st83",
+      "surname": "Tekavčič",
+      "name": "Ema",
+      "year": 1
+    },
+    {
+      "id": "uv94",
+      "surname": "Gabršček",
+      "name": "Žan",
+      "year": 2
+    },
+    {
+      "id": "wx05",
+      "surname": "Ploj",
+      "name": "Nika",
+      "year": 3
+    },
+    {
+      "id": "yz17",
+      "surname": "Kobe",
+      "name": "Aljaž",
+      "year": 1
+    },
+    {
+      "id": "ab28",
+      "surname": "Čadež",
+      "name": "Sara",
+      "year": 2
+    },
+    {
+      "id": "cd39",
+      "surname": "Toplak",
+      "name": "Luka",
+      "year": 3
+    },
+    {
+      "id": "ef40",
+      "surname": "Gregorič",
+      "name": "Maja",
+      "year": 1
+    },
+    {
+      "id": "gh51",
+      "surname": "Lavrič",
+      "name": "Žiga",
+      "year": 2
+    },
+    {
+      "id": "ij62",
+      "surname": "Završnik",
+      "name": "Jan",
+      "year": 3
+    },
+    {
+      "id": "kl73",
+      "surname": "Medved",
+      "name": "Eva",
+      "year": 1
+    },
+    {
+      "id": "mn84",
+      "surname": "Golouh",
+      "name": "Nina",
+      "year": 2
+    },
+    {
+      "id": "op95",
+      "surname": "Perko",
+      "name": "Miha",
+      "year": 3
+    },
+    {
+      "id": "qr06",
+      "surname": "Cvetko",
+      "name": "Ana",
+      "year": 1
+    },
+    {
+      "id": "st18",
+      "surname": "Lah",
+      "name": "Marko",
+      "year": 2
+    },
+    {
+      "id": "uv29",
+      "surname": "Rek",
+      "name": "Klara",
+      "year": 3
+    },
+    {
+      "id": "wx30",
+      "surname": "Vogrin",
+      "name": "Žan",
+      "year": 1
+    },
+    {
+      "id": "yz41",
+      "surname": "Špan",
+      "name": "Tina",
+      "year": 2
+    },
+    {
+      "id": "ab52",
+      "surname": "Logar",
+      "name": "Luka",
+      "year": 3
+    },
+    {
+      "id": "cd63",
+      "surname": "Strmšek",
+      "name": "Maja",
+      "year": 1
+    },
+    {
+      "id": "ef74",
+      "surname": "Cerar",
+      "name": "Žiga",
+      "year": 2
+    },
+    {
+      "id": "gh85",
+      "surname": "Fabijan",
+      "name": "Sara",
+      "year": 3
+    },
+    {
+      "id": "ij96",
+      "surname": "Brodar",
+      "name": "Jure",
+      "year": 1
+    },
+    {
+      "id": "kl07",
+      "surname": "Tavčar",
+      "name": "Lina",
+      "year": 2
+    },
+    {
+      "id": "mn19",
+      "surname": "Vovk",
+      "name": "Vid",
+      "year": 3
+    },
+    {
+      "id": "op20",
+      "surname": "Grobelnik",
+      "name": "Ema",
+      "year": 1
+    },
+    {
+      "id": "qr31",
+      "surname": "Peterlin",
+      "name": "Žan",
+      "year": 2
+    },
+    {
+      "id": "st42",
+      "surname": "Kotar",
+      "name": "Nika",
+      "year": 3
+    },
+    {
+      "id": "uv53",
+      "surname": "Sušnik",
+      "name": "Aljaž",
+      "year": 1
+    },
+    {
+      "id": "wx64",
+      "surname": "Mežnar",
+      "name": "Sara",
+      "year": 2
+    },
+    {
+      "id": "yz75",
+      "surname": "Deželak",
+      "name": "Luka",
+      "year": 3
+    },
+    {
+      "id": "ab86",
+      "surname": "Ravbar",
+      "name": "Maja",
+      "year": 1
+    },
+    {
+      "id": "cd97",
+      "surname": "Kolar",
+      "name": "Žiga",
+      "year": 2
+    },
+    {
+      "id": "ef08",
+      "surname": "Božič",
+      "name": "Jan",
+      "year": 3
+    },
+    {
+      "id": "gh20",
+      "surname": "Planinc",
+      "name": "Eva",
+      "year": 1
+    },
+    {
+      "id": "ij31",
+      "surname": "Starič",
+      "name": "Nina",
+      "year": 2
+    },
+    {
+      "id": "kl42",
+      "surname": "Štrukelj",
+      "name": "Miha",
+      "year": 3
+    },
+    {
+      "id": "mn53",
+      "surname": "Debeljak",
+      "name": "Ana",
+      "year": 1
+    },
+    {
+      "id": "op64",
+      "surname": "Rus",
+      "name": "Marko",
+      "year": 2
+    },
+    {
+      "id": "qr75",
+      "surname": "Bajc",
+      "name": "Klara",
+      "year": 3
+    },
+    {
+      "id": "st86",
+      "surname": "Gomboc",
+      "name": "Žan",
+      "year": 1
+    },
+    {
+      "id": "uv97",
+      "surname": "Košir",
+      "name": "Tina",
+      "year": 2
+    },
+    {
+      "id": "wx08",
+      "surname": "Bajde",
+      "name": "Luka",
+      "year": 3
+    },
+    {
+      "id": "yz19",
+      "surname": "Pavšič",
+      "name": "Maja",
+      "year": 1
+    },
+    {
+      "id": "ab30",
+      "surname": "Tomšič",
+      "name": "Žiga",
+      "year": 2
+    },
+    {
+      "id": "cd41",
+      "surname": "Polanec",
+      "name": "Sara",
+      "year": 3
+    },
+    {
+      "id": "ef52",
+      "surname": "Semenič",
+      "name": "Jure",
+      "year": 1
+    },
+    {
+      "id": "gh63",
+      "surname": "Cesar",
+      "name": "Lina",
+      "year": 2
+    },
+    {
+      "id": "ij74",
+      "surname": "Muhič",
+      "name": "Vid",
+      "year": 3
+    },
+    {
+      "id": "kl85",
+      "surname": "Gorišek",
+      "name": "Ema",
+      "year": 1
+    },
+    {
+      "id": "mn96",
+      "surname": "Novšak",
+      "name": "Žan",
+      "year": 2
+    },
+    {
+      "id": "op07",
+      "surname": "Radić",
+      "name": "Nika",
+      "year": 3
+    },
+    {
+      "id": "qr18",
+      "surname": "Černe",
+      "name": "Aljaž",
+      "year": 1
+    },
+    {
+      "id": "st29",
+      "surname": "Bajuk",
+      "name": "Sara",
+      "year": 2
+    },
+    {
+      "id": "uv40",
+      "surname": "Ogrin",
+      "name": "Luka",
+      "year": 3
+    },
+    {
+      "id": "wx51",
+      "surname": "Špes",
+      "name": "Maja",
+      "year": 1
+    },
+    {
+      "id": "yz62",
+      "surname": "Veber",
+      "name": "Žiga",
+      "year": 2
+    },
+    {
+      "id": "ab73",
+      "surname": "Hafner",
+      "name": "Jan",
+      "year": 3
+    },
+    {
+      "id": "cd84",
+      "surname": "Jenčič",
+      "name": "Eva",
+      "year": 1
+    },
+    {
+      "id": "ef95",
+      "surname": "Klemen",
+      "name": "Nina",
+      "year": 2
+    },
+    {
+      "id": "gh06",
+      "surname": "Mesarič",
+      "name": "Miha",
+      "year": 3
+    },
+    {
+      "id": "ij17",
+      "surname": "Bobek",
+      "name": "Ana",
+      "year": 1
+    },
+    {
+      "id": "kl28",
+      "surname": "Šket",
+      "name": "Marko",
+      "year": 2
+    },
+    {
+      "id": "mn39",
+      "surname": "Vrtačnik",
+      "name": "Klara",
+      "year": 3
+    },
+    {
+      "id": "op50",
+      "surname": "Novšak",
+      "name": "Žan",
+      "year": 1
+    },
+    {
+      "id": "qr61",
+      "surname": "Zore",
+      "name": "Tina",
+      "year": 2
+    },
+    {
+      "id": "st72",
+      "surname": "Benko",
+      "name": "Luka",
+      "year": 3
+    },
+    {
+      "id": "uv83",
+      "surname": "Gorenc",
+      "name": "Maja",
+      "year": 1
+    },
+    {
+      "id": "wx94",
+      "surname": "Humar",
+      "name": "Žiga",
+      "year": 2
+    },
+    {
+      "id": "yz05",
+      "surname": "Pintar",
+      "name": "Sara",
+      "year": 3
+    },
+    {
+      "id": "ab16",
+      "surname": "Omerzel",
+      "name": "Jure",
+      "year": 1
+    },
+    {
+      "id": "13b8",
+      "surname": "Novak",
+      "name": "Peter",
+      "year": 3
+    },
+    {
+      "id": "a03d",
+      "surname": "Kajte",
+      "name": "Novak",
+      "year": 2
     }
   ],
   "subjects": [
@@ -188,38 +955,246 @@
       "name": "chemistry",
       "semester": "winter",
       "ects": 4
+    },
+    {
+      "id": "8",
+      "name": "physics",
+      "semester": "summer",
+      "ects": 3
+    },
+    {
+      "id": "9",
+      "name": "art",
+      "semester": "winter",
+      "ects": 2
+    },
+    {
+      "id": "10",
+      "name": "music",
+      "semester": "summer",
+      "ects": 3
     }
   ],
   "enrollments": [
     {
-      "id": "9a01",
-      "studentId": "soi4",
+      "id": "7d1b",
+      "studentId": "wx67",
+      "subjectId": "3"
+    },
+    {
+      "id": "61d3",
+      "studentId": "wx67",
       "subjectId": "2"
     },
     {
-      "id": "7252",
-      "studentId": "soi4",
+      "id": "609f",
+      "studentId": "wx67",
+      "subjectId": "4"
+    },
+    {
+      "id": "f12f",
+      "studentId": "wx67",
+      "subjectId": "8"
+    },
+    {
+      "id": "ce41",
+      "studentId": "wx67",
+      "subjectId": "9"
+    },
+    {
+      "id": "aa9f",
+      "studentId": "cd90",
+      "subjectId": "2"
+    },
+    {
+      "id": "189f",
+      "studentId": "cd90",
       "subjectId": "1"
     },
     {
-      "id": "43f1",
-      "studentId": "soi4",
+      "id": "3d5d",
+      "studentId": "cd90",
       "subjectId": "3"
     },
     {
-      "id": "c1a9",
-      "studentId": "pl09",
-      "subjectId": "3"
+      "id": "b656",
+      "studentId": "cd90",
+      "subjectId": "4"
     },
     {
-      "id": "3bad",
-      "studentId": "pl09",
+      "id": "9ecb",
+      "studentId": "lm78",
       "subjectId": "2"
     },
     {
-      "id": "5902",
-      "studentId": "pl09",
+      "id": "3547",
+      "studentId": "lm78",
+      "subjectId": "1"
+    },
+    {
+      "id": "8d41",
+      "studentId": "lm78",
+      "subjectId": "3"
+    },
+    {
+      "id": "a8eb",
+      "studentId": "lm78",
+      "subjectId": "5"
+    },
+    {
+      "id": "f3fb",
+      "studentId": "lm78",
+      "subjectId": "6"
+    },
+    {
+      "id": "dee9",
+      "studentId": "fg45",
+      "subjectId": "2"
+    },
+    {
+      "id": "b385",
+      "studentId": "fg45",
+      "subjectId": "1"
+    },
+    {
+      "id": "c945",
+      "studentId": "fg45",
+      "subjectId": "3"
+    },
+    {
+      "id": "63e3",
+      "studentId": "fg45",
       "subjectId": "4"
+    },
+    {
+      "id": "11a3",
+      "studentId": "13b8",
+      "subjectId": "1"
+    },
+    {
+      "id": "d370",
+      "studentId": "13b8",
+      "subjectId": "2"
+    },
+    {
+      "id": "1a49",
+      "studentId": "13b8",
+      "subjectId": "3"
+    },
+    {
+      "id": "f6d3",
+      "studentId": "13b8",
+      "subjectId": "10"
+    },
+    {
+      "id": "8e8d",
+      "studentId": "13b8",
+      "subjectId": "6"
+    },
+    {
+      "id": "60e1",
+      "studentId": "13b8",
+      "subjectId": "4"
+    },
+    {
+      "id": "1903",
+      "studentId": "13b8",
+      "subjectId": "8"
+    },
+    {
+      "id": "18b3",
+      "studentId": "13b8",
+      "subjectId": "9"
+    },
+    {
+      "id": "c660",
+      "studentId": "13b8",
+      "subjectId": "5"
+    },
+    {
+      "id": "356c",
+      "studentId": "13b8",
+      "subjectId": "7"
+    },
+    {
+      "id": "05da",
+      "studentId": "ef21",
+      "subjectId": "1"
+    },
+    {
+      "id": "2735",
+      "studentId": "ef21",
+      "subjectId": "2"
+    },
+    {
+      "id": "089a",
+      "studentId": "ef21",
+      "subjectId": "5"
+    },
+    {
+      "id": "d162",
+      "studentId": "a03d",
+      "subjectId": "2"
+    },
+    {
+      "id": "367c",
+      "studentId": "a03d",
+      "subjectId": "1"
+    },
+    {
+      "id": "a69e",
+      "studentId": "a03d",
+      "subjectId": "3"
+    },
+    {
+      "id": "2262",
+      "studentId": "mn55",
+      "subjectId": "2"
+    },
+    {
+      "id": "067f",
+      "studentId": "mn55",
+      "subjectId": "1"
+    },
+    {
+      "id": "235e",
+      "studentId": "mn55",
+      "subjectId": "3"
+    },
+    {
+      "id": "924c",
+      "studentId": "mn55",
+      "subjectId": "4"
+    },
+    {
+      "id": "4610",
+      "studentId": "mn55",
+      "subjectId": "7"
+    },
+    {
+      "id": "9ebb",
+      "studentId": "mn55",
+      "subjectId": "8"
+    },
+    {
+      "id": "aef2",
+      "studentId": "mn55",
+      "subjectId": "9"
+    },
+    {
+      "id": "658f",
+      "studentId": "mn55",
+      "subjectId": "5"
+    },
+    {
+      "id": "7d3a",
+      "studentId": "mn55",
+      "subjectId": "10"
+    },
+    {
+      "id": "3002",
+      "studentId": "mn55",
+      "subjectId": "6"
     }
   ],
   "profile": {

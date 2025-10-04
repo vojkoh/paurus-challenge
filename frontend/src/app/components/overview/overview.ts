@@ -15,6 +15,7 @@ import { MultiSelectModule } from 'primeng/multiselect';
 import { SubjectsService } from '../../services/subjects-service';
 import { EnrollmentsService } from '../../services/enrollments-service';
 import { PaginatorModule, PaginatorState } from 'primeng/paginator';
+import { forkJoin } from 'rxjs';
 
 
 interface SubjectOption {
@@ -50,8 +51,10 @@ export class Overview implements OnInit {
 
   protected students: Student[] = [];
   protected subjects: SubjectOption[] = [];
-  protected visible: boolean = false;
+  protected dialogVisible: boolean = false;
 
+  // for new student creation (NgModel)
+  protected studentSurname: string = '';
   protected studentName: string = '';
   protected studentYear: number | null = null;
   protected studentSubjectIds: string[] = [];
@@ -60,8 +63,7 @@ export class Overview implements OnInit {
   protected first: number = 0;
   protected page: number = 0;
   protected rows: number = 20;
-  protected totalRecords: number = 120; // TO-DO: Get from backend
-
+  protected totalRecords!: number;
 
   ngOnInit(): void {
     this.getStudents();
@@ -75,7 +77,7 @@ export class Overview implements OnInit {
         this.totalRecords = res.items;
       },
       error: (error) => {
-        console.error('Error fetching students:', error);
+        console.error('Error fetching students');
       }
     });
   }
@@ -89,14 +91,13 @@ export class Overview implements OnInit {
         }));
       },
       error: (error) => {
-        console.error('Error fetching subjects:', error);
+        console.error('Error fetching subjects');
       }
     });
   }
 
 
-  protected async saveStudent() {
-    // TO-DO: Save student logic
+  protected saveStudent() {
 
     if (!this.studentName || !this.studentYear) {
       console.error('Invalid student data');
@@ -104,28 +105,35 @@ export class Overview implements OnInit {
     }
 
     this.studentsService.addStudent({
+      surname: this.studentSurname,
       name: this.studentName,
       year: this.studentYear
     }).subscribe({
       next: (student) => {
-        // Adding student to the list
         this.students.push(student);
-        // Saving enrollments
-        this.studentSubjectIds.forEach(subjectId => { 
-          this.enrollmentsService.addEnrollment({
+
+        // collecting all enrollment observables
+        const enrollmentObservables = this.studentSubjectIds.map(subjectId => {
+          return this.enrollmentsService.addEnrollment({
             studentId: student.id,
             subjectId
-          }).subscribe({
-            error: () => {
-              console.log('error reserving timeslots');
-            }
-          })
-        });
+          });
+        })
 
-        this.hideDialog();
-        this.studentName = '';
-        this.studentYear = null;
-        this.studentSubjectIds = [];
+        // Using forkJoin to wait for all enrollment requests to complete
+        forkJoin(enrollmentObservables).subscribe({
+          next: () => {
+            console.log('All enrollments saved successfully');
+            // cleanup and close dialog
+            this.hideDialog();
+            this.studentName = '';
+            this.studentYear = null;
+            this.studentSubjectIds = [];
+          },
+          error: () => {
+            console.log('Error saving enrollments');
+          }
+        });
       },
       error: (error) => {
         console.error('Error saving student:', error);
@@ -133,7 +141,20 @@ export class Overview implements OnInit {
     });
   }
 
+  protected deleteStudent(studentId: string) {
+    this.studentsService.deleteStudent(studentId).subscribe({
+      next: () => {
+        // Remove student from the list
+        this.students = this.students.filter(student => student.id !== studentId);
+      },
+      error: (error) => {
+        console.error('Error deleting student:', error);
+      }
+    });
+  }
+
   onPageChange(event: PaginatorState) {
+    // paginator state refresh
     this.first = event.first ?? 0;
     this.page = event.page ?? 1;
     this.rows = event.rows ?? 20;
@@ -141,10 +162,10 @@ export class Overview implements OnInit {
   }
 
   showDialog() {
-    this.visible = true;
+    this.dialogVisible = true;
   }
 
   hideDialog() {
-    this.visible = false;
+    this.dialogVisible = false;
   }
 }

@@ -6,6 +6,7 @@ import { catchError } from 'rxjs/internal/operators/catchError';
 import { throwError } from 'rxjs/internal/observable/throwError';
 import { CreateEnrollmentDto } from '../dtos/create-enrollment-dto';
 import { NewEnrollmentDto } from '../dtos/new-enrollment-dto';
+import { environment } from '../../../src/environments/environment';
 
 @Injectable({
   providedIn: 'root'
@@ -13,8 +14,7 @@ import { NewEnrollmentDto } from '../dtos/new-enrollment-dto';
 export class EnrollmentsService {
   constructor(protected readonly http: HttpClient) {}
 
-  protected apiUrl = 'http://localhost:3000';
-  // TO-DO: Environment variable
+  protected apiUrl = environment.apiUrl;
 
   public getEnrollments4Student(studentId: string): Observable<Enrollment[]> {
     return this.http.get<Enrollment[]>(`
