@@ -205,6 +205,21 @@
       "id": "43f1",
       "studentId": "soi4",
       "subjectId": "3"
+    },
+    {
+      "id": "c1a9",
+      "studentId": "pl09",
+      "subjectId": "3"
+    },
+    {
+      "id": "3bad",
+      "studentId": "pl09",
+      "subjectId": "2"
+    },
+    {
+      "id": "5902",
+      "studentId": "pl09",
+      "subjectId": "4"
     }
   ],
   "profile": {

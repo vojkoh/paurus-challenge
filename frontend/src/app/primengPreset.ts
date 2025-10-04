@@ -4,17 +4,17 @@ import Nora from '@primeuix/themes/nora';
 const MyPreset = definePreset(Nora, {
     semantic: {
         primary: {
-            50: '{fuchsia.50}',
-            100: '{fuchsia.100}',
-            200: '{fuchsia.200}',
-            300: '{fuchsia.300}',
-            400: '{fuchsia.400}',
-            500: '{fuchsia.500}',
-            600: '{fuchsia.600}',
-            700: '{fuchsia.700}',
-            800: '{fuchsia.800}',
-            900: '{fuchsia.900}',
-            950: '{fuchsia.950}'
+            50: '#D9D1DA',
+            100: '#D0C5D0',
+            200: '#BDAFBE',
+            300: '#AB98AC',
+            400: '#98829A',
+            500: '#856C86',
+            600: '#6E5A70',
+            700: '#584859',
+            800: '#392F3A',
+            900: '#1B161B',
+            950: '#0B090B'
         },
         colorScheme: {
             light: {

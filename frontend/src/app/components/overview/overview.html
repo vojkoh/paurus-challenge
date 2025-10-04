@@ -29,8 +29,13 @@
         </ng-template>
     </p-table>
 
+    <div class="flex justify-center">
+        <p-button (click)="showDialog()" label="Add Student" />
+    </div>
 
-    <div class="card flex justify-space-between">
+    <div class="h-16"></div>
+
+    <div class="card flex fixed left-2 right-2 bottom-1 shadow-[#bbbbbb] shadow-sm rounded-sm">
         <p-paginator 
             (onPageChange)="onPageChange($event)" 
             [first]="first" [rows]="rows" 
@@ -38,11 +43,10 @@
             [rowsPerPageOptions]="[20, 50]"
             [showCurrentPageReport]="true"
             currentPageReportTemplate="Showing {first} to {last} of {totalRecords} entries"
-            class="w-full my-2 flex justify-space-between"
+            class="w-full flex justify-space-between"
         />
     </div>
 
-    <p-button (click)="showDialog()" label="Add Student" />
     <p-dialog header="Add a student" [modal]="true" [(visible)]="visible" [style]="{ width: '25rem' }">
         <span class="p-text-secondary block mb-8">Provide information for creating a new student.</span>
         <div class="flex items-center flex-col gap-4 mb-4">
